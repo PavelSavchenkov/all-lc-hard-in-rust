@@ -1,0 +1,184 @@
+//! Solution for https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces
+//! 3426. Manhattan Distances of All Arrangements of Pieces
+
+impl Solution {
+    pub fn distance_sum(m: i32, n: i32, k: i32) -> i32 {
+        let m = m as usize;
+        let n = n as usize;
+        let k = k as usize;
+
+        // ans for k=2 multiply by binom(n * m - 2, k - 2)
+
+        let mut fact = vec![Num::new(1); n * m + 1];
+        for i in 2..fact.len() {
+            fact[i] = fact[i - 1] * Num::new(i as u32);
+        }
+
+        let mut ans = Num::new(0);
+        for dx in 1..m {
+            let coef = Num::new(dx as u32) * Num::new((m - dx) as u32) * Num::new(n as u32).pow(2);
+            ans += coef;
+        }
+        for dy in 1..n {
+            let coef = Num::new(dy as u32) * Num::new((n - dy) as u32) * Num::new(m as u32).pow(2);
+            ans += coef;
+        }
+
+        ans *= fact[n * m - 2];
+        ans /= fact[k - 2];
+        ans /= fact[n * m - 2 - (k - 2)];
+
+        ans.val as i32
+    }
+}
+
+use std::cmp::Eq;
+use std::ops::{Add, AddAssign, Div, DivAssign, Mul, MulAssign, Sub, SubAssign};
+
+const MOD: u32 = 1_000_000_007;
+type Num = NumMod<MOD>;
+
+#[derive(Clone, Copy, PartialEq, Eq, Hash, Debug)]
+struct NumMod<const M: u32> {
+    val: u32,
+}
+
+impl<const M: u32> NumMod<M> {
+    // doesn't work
+    const static_assert: () = {
+        assert!(M < (1 << 31));
+    };
+
+    fn new(x: u32) -> Self {
+        NumMod { val: x % M }
+    }
+
+    // x and y are already normalized
+    fn safe_add_mod(mut x: u32, y: u32) -> u32 {
+        x += y;
+        if x >= M {
+            x -= M;
+        }
+        x
+    }
+
+    fn safe_sub_mod(mut x: u32, y: u32) -> u32 {
+        x += M - y;
+        if x >= M {
+            x -= M;
+        }
+        x
+    }
+
+    fn safe_mul_mod(x: u32, y: u32) -> u32 {
+        ((x as u64 * y as u64) % M as u64) as u32
+    }
+
+    fn safe_div_mod(x: u32, y: u32) -> u32 {
+        Self::safe_mul_mod(x, Self::inv_mod(y))
+    }
+
+    fn pow(&self, p: u64) -> NumMod<M> {
+        NumMod::new(Self::pow_mod(self.val, p))
+    }
+
+    fn pow_mod(mut x: u32, mut p: u64) -> u32 {
+        let mut ans = 1;
+        while p > 0 {
+            if p % 2 == 1 {
+                ans = Self::safe_mul_mod(ans, x);
+            }
+            x = Self::safe_mul_mod(x, x);
+            p /= 2;
+        }
+        ans
+    }
+
+    fn inv_mod(x: u32) -> u32 {
+        assert!(x != 0);
+        Self::pow_mod(x, (MOD - 2) as u64)
+    }
+}
+
+impl<const M: u32> Add for NumMod<M> {
+    type Output = Self;
+
+    fn add(self, other: Self) -> Self::Output {
+        Self {
+            val: Self::safe_add_mod(self.val, other.val),
+        }
+    }
+}
+
+impl<const M: u32> AddAssign for NumMod<M> {
+    fn add_assign(&mut self, other: Self) {
+        *self = *self + other;
+    }
+}
+
+impl<const M: u32> Sub for NumMod<M> {
+    type Output = Self;
+
+    fn sub(self, other: Self) -> Self::Output {
+        Self {
+            val: Self::safe_sub_mod(self.val, other.val),
+        }
+    }
+}
+
+impl<const M: u32> SubAssign for NumMod<M> {
+    fn sub_assign(&mut self, other: Self) {
+        *self = *self - other;
+    }
+}
+
+impl<const M: u32> Mul for NumMod<M> {
+    type Output = Self;
+
+    fn mul(self, other: Self) -> Self::Output {
+        Self {
+            val: Self::safe_mul_mod(self.val, other.val),
+        }
+    }
+}
+
+impl<const M: u32> MulAssign for NumMod<M> {
+    fn mul_assign(&mut self, other: Self) {
+        *self = *self * other;
+    }
+}
+
+impl<const M: u32> Div for NumMod<M> {
+    type Output = Self;
+
+    fn div(self, other: Self) -> Self::Output {
+        Self {
+            val: Self::safe_div_mod(self.val, other.val),
+        }
+    }
+}
+
+impl<const M: u32> DivAssign for NumMod<M> {
+    fn div_assign(&mut self, other: Self) {
+        *self = *self / other;
+    }
+}
+
+// << ---------------- Code below here is only for local use ---------------- >>
+
+pub struct Solution;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    use rstest::rstest;
+
+    #[rstest]
+    #[case(2, 2, 2, 8)]
+    #[case(1, 4, 3, 20)]
+    fn case(#[case] m: i32, #[case] n: i32, #[case] k: i32, #[case] expected: i32) {
+        let actual = Solution::distance_sum(m, n, k);
+        assert_eq!(actual, expected);
+    }
+}
