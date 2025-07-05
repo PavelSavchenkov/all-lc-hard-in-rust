@@ -1,0 +1,13 @@
+[package]
+name = "leetcode"
+version = "0.1.0"
+authors = ["Pavel Savchenkov <pavelsavchenkow@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+# Current versions can be found at https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-languages
+rand = "0.8"
+regex = "1"
+
+cargo-leet = "0.2.0"
+rstest = "0.22.0"
