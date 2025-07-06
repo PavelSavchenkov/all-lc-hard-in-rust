@@ -1,0 +1,206 @@
+{
+  "generated_at_utc": "2025-07-06T18:42:30Z",
+  "count": 20,
+  "problems": [
+    {
+      "id": 3851,
+      "prob": "[Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/find_sum_of_array_product_of_magical_sequences.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 181,
+      "ac": 22.7,
+      "acc": 1500
+    },
+    {
+      "id": 2028,
+      "prob": "[The Earliest and Latest Rounds Where Players Compete](https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/the_earliest_and_latest_rounds_where_players_compete.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 92,
+      "ac": 48.1,
+      "acc": 6200
+    },
+    {
+      "id": 2068,
+      "prob": "[Maximum Genetic Difference Query](https://leetcode.com/problems/maximum-genetic-difference-query)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/maximum_genetic_difference_query.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 105,
+      "ac": 44.5,
+      "acc": 6900
+    },
+    {
+      "id": 3196,
+      "prob": "[Apply Operations to Maximize Frequency Score](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/apply_operations_to_maximize_frequency_score.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 48,
+      "ac": 36.5,
+      "acc": 8200
+    },
+    {
+      "id": 2147,
+      "prob": "[The Score of Students Solving Math Expression](https://leetcode.com/problems/the-score-of-students-solving-math-expression)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/the_score_of_students_solving_math_expression.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 155,
+      "ac": 33.3,
+      "acc": 8400
+    },
+    {
+      "id": 3017,
+      "prob": "[Number of Beautiful Integers in the Range](https://leetcode.com/problems/number-of-beautiful-integers-in-the-range)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/number_of_beautiful_integers_in_the_range.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 72,
+      "ac": 19.7,
+      "acc": 11500
+    },
+    {
+      "id": 3305,
+      "prob": "[Count Prefix and Suffix Pairs II](https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/count_prefix_and_suffix_pairs_ii.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 99,
+      "ac": 27.3,
+      "acc": 14200
+    },
+    {
+      "id": 2267,
+      "prob": "[Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/minimum_difference_in_sums_after_removal_of_elements.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 48,
+      "ac": 49.7,
+      "acc": 14200
+    },
+    {
+      "id": 2818,
+      "prob": "[Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/maximum_strictly_increasing_cells_in_a_matrix.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 53,
+      "ac": 30.7,
+      "acc": 15400
+    },
+    {
+      "id": 3386,
+      "prob": "[Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/find_edges_in_shortest_paths.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 147,
+      "ac": 45.6,
+      "acc": 15800
+    },
+    {
+      "id": 939,
+      "prob": "[Valid Permutations for DI Sequence](https://leetcode.com/problems/valid-permutations-for-di-sequence)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/valid_permutations_for_di_sequence.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 160,
+      "ac": 56.8,
+      "acc": 18600
+    },
+    {
+      "id": 821,
+      "prob": "[Bricks Falling When Hit](https://leetcode.com/problems/bricks-falling-when-hit)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/bricks_falling_when_hit.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 109,
+      "ac": 35.8,
+      "acc": 34200
+    },
+    {
+      "id": 938,
+      "prob": "[Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/numbers_at_most_n_given_digit_set.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 53,
+      "ac": 43.4,
+      "acc": 49500
+    },
+    {
+      "id": 884,
+      "prob": "[K-Similar Strings](https://leetcode.com/problems/k-similar-strings)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/k_similar_strings.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 97,
+      "ac": 40.1,
+      "acc": 50600
+    },
+    {
+      "id": 2505,
+      "prob": "[Number of Good Paths](https://leetcode.com/problems/number-of-good-paths)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/number_of_good_paths.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 93,
+      "ac": 56.0,
+      "acc": 61000
+    },
+    {
+      "id": 1220,
+      "prob": "[Smallest Sufficient Team](https://leetcode.com/problems/smallest-sufficient-team)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/smallest_sufficient_team.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 56,
+      "ac": 55.3,
+      "acc": 68600
+    },
+    {
+      "id": 3181,
+      "prob": "[Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/find_building_where_alice_and_bob_can_meet.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 61,
+      "ac": 52.2,
+      "acc": 70600
+    },
+    {
+      "id": 931,
+      "prob": "[Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/maximum_frequency_stack.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 37,
+      "ac": 66.3,
+      "acc": 202000
+    },
+    {
+      "id": 85,
+      "prob": "[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/maximal_rectangle.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 49,
+      "ac": 53.9,
+      "acc": 607900
+    },
+    {
+      "id": 76,
+      "prob": "[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)",
+      "src": "[source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/src/minimum_window_substring.rs)",
+      "rt": "\u2014",
+      "mem": "\u2014",
+      "loc": 71,
+      "ac": 45.5,
+      "acc": 1800000
+    }
+  ]
+}
