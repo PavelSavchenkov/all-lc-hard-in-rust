@@ -7,7 +7,7 @@ Thanks to https://github.com/rust-practice/cargo-leet for environment for runnin
 
 <!-- BEGIN LC TABLE -->
 
-| # | Problem | Solution | ⚡ Runtime | 🧠 Memory | 📏 Lines | 📊 Ac % | 🟢 Accepted | 🔥 Difficulty |
+| # | Problem | Solution | ⚡ Runtime | 🧠 Memory | 📏 Lines | 📊 Ac % | 🟢 Accepted | 🔥 Level |
 | :- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | 3804 | [Maximize Active Section with Trade II](https://leetcode.com/problems/maximize-active-section-with-trade-ii) | [source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/main/src/maximize_active_section_with_trade_ii.rs) | `79 ms` | `10 MB` | 142 | 19.0% | 1,100 | 🔴 **Hard** |
 | 3851 | [Find Sum of Array Product of Magical Sequences](https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences) | [source](https://github.com/PavelSavchenkov/all-lc-hard-in-rust/blob/main/src/find_sum_of_array_product_of_magical_sequences.rs) | `33 ms` | `2.6 MB` | 181 | 22.7% | 1,500 | 🔴 **Hard** |
